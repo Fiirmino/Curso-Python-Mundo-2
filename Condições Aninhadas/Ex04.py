@@ -4,9 +4,8 @@ years = int(input('\033[1:31mQual a sua idade?\033[m '))
 
 if years ==18:
     print('Hora de se alistar combatente !!')
-elif years >18:
-    falta = years-18
+elif years <18:
+    falta = 18-years
     print(f'\033[1:30:47mOlá {name} ainda faltam {falta} anos para seu alistamento\033[m')
 else:
-    falta = (years-18)*-1
-    print(f'Olá {name} ainda faltam {falta} anos para você poder se alistar')
+    print('O tempo do alistamento ja passou')
