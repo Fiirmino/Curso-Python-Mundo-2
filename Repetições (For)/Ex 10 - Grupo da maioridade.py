@@ -1,14 +1,20 @@
 from datetime import datetime
 hoje = datetime.now()
+tot = 0
 for c in range(1,8):
-    idade = input('Informe sua data de nascimento:')
+    idade = input('Informe sua data de nascimento: ')
     nascimento = datetime.strptime(idade,'%d/%m/%Y')
-    maioridade = hoje-nascimento
+    maioridade = hoje.year-nascimento.year
     if maioridade>=18:
-        print('maior')
-    elif nascimento.month>=hoje.month and nascimento.year<hoje.year:
-        print('Você não é de maior')
+        tot +=1
+        print('De maior')
+        if hoje.month < nascimento.month or hoje.month == nascimento.month and hoje.day < nascimento.day:
+            maioridade = (hoje.year - nascimento.year) - 1
+            print(f'Você possui {maioridade} anos, logo não é de maior')
     else:
-        print('Você não é de maior')
+        print(f'Você possui {maioridade} anos, logo não é de maior')
+print(f'o total de pessoas de maior são ')
+
+
 
 
