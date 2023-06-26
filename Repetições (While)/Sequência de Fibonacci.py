@@ -1,8 +1,11 @@
-n = int(input('Digite um valor: '))
-
-cont = -1
-soma = 0
-while cont<=n-1:
-    cont+=1
-    soma+=n
-    print(soma, end=' ')
+n = int(input('Deseja mostrar quantos numeros da sequencia ?'))
+t1 = 0
+t2 = 1
+print(f'{t1}->{t2}', end='')
+cont = 3
+while cont<=n:
+    t3 = t1+t2
+    t1=t2
+    t2=t3
+    print(f'->{t3}',end = '')
+    cont = cont+1
