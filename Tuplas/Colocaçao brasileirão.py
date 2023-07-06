@@ -1,0 +1,6 @@
+times = ('botafogo','Grêmio','Flamengo','Palmeiras','Bragantino','Fluminense','São Paulo','Internacional','Athletico-PR','Fortaleza','Cruzeiro','Cuiabá','Santos','Bahia','Corinthians','Goiás','Vasco','América-MG','Coritiba')
+posicao = times.index('Palmeiras')
+print(f'Os primeiros colocados são {times[0:5]}')
+print(f'Os últimos colocados são {times[-4:]}')
+print(f'Lista de times do brasileirão em ordem alfabética {sorted(times)}')
+print(f'Palmeiras está na posição {posicao+1} do brasileirão')
