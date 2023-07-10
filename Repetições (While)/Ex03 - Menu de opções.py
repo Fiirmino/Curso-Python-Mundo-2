@@ -5,14 +5,45 @@ while c<5:
     for i in range (1,3):
         num =int(input(f'Digite o {i}° número:'))
         maior.append(num)
-    print('[1]SOMA')
+    print('[1]SOMA')3333333333333
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    jjutrttttttttttttttttttttttttttttttttt
+    3320,
     print('[2]MULTIPLICAÇÃO')
     print('[3]MAIOR NÚMERO')
     print('[4]NOVOS NÚMEROS')
     print('[5]ENCERRAR O PROGRAMA')
-    c = int(input('Escolha uma opção: '))
+    c = int(input('Escolha uma opção: num}'))
     if c == 1:
-        print(f'A soma de {num}+{num} = {sum(maior)}')
+        print(f'A soma de {+{num} = {sum(maior)}')
         maior.clear()
     elif c == 2:
         print(f'A multplicação entre {num}x{num} = {num*num}')
