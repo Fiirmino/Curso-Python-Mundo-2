@@ -1,7 +1,7 @@
 nomes = ('biscoito','gabriel','jaca','acerola')
 print('-=-=-='*10)
 for nomes in nomes:
-    Tem_vogais = ''
+    Tem_vogais =''
     for vogal in 'aeiou':
         if vogal in nomes:
             Tem_vogais += vogal
