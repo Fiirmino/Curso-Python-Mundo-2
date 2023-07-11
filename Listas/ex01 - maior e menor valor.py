@@ -1,9 +1,8 @@
-#COMANDO insert (inserir itens no meio de uma lista)
-#COMANDO lista.pop(int) remove itens da lista pelo numero
-#COMANDO lista.remove(str) remove itens da lista pelo nome
-#COMANDO list(range(int,int) adicionar numeração a partir do range
-#COMANDO list.sort(reverse=True) organiza a lista de forma reversa
-
-
-lanche = [3,4,9,2,34]
-print(sorted(lanche))
+num =[]
+for c in range (1,6):
+    num.append(int(input(f'Digite o {c} número: ')))
+print('-x-'*20)
+print(num)
+print(f'O maior número é {max(num)} e ele está na posição {num.index(max(num))}')
+print(f'O menor número da lista é {min(num)} e ele está na posição {num.index(min(num))}')
+print('-x-'*20)
